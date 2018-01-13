@@ -87,7 +87,15 @@ body {
 
 .page h1 {
   position: relative;
-  top: 50%;
+  top: 26%;
+  transform: translateY(-48%);
+  
+  font-size: 50px;
+}
+
+.page img {
+  position: relative;
+  top: 30%;
   transform: translateY(-48%);
   
   font-size: 50px;
