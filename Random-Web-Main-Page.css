@@ -51,44 +51,100 @@ table {
 
 /*Other*/
 
+@font-face {
+  font-family: Squared-Display;
+  src: url(Fonts/SquaredDisplay.TTF);
+}
+
+@font-face {
+  font-family: I-Find-You-Freaky;
+  src: url(Fonts/i_fink_u_freeky.TTF);
+}
+
 body {
   /*Background*/
-  background-color: lightblue;
+  background-color: #4f0ba3;
+
+  color: white;
   
   /*Sideways Scrolling*/
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
   max-height: 100vh;
-  
   min-width: 200vw;
+
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+
+  /* older spec implementation */
+  scroll-snap-destination: 0% 100%;
+  scroll-snap-points-x: repeat(100%);
+
+  pointer-events: none;
 }
 
 .page h1 {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-48%);
   
   font-size: 50px;
 }
 
 .page {
-  /*border: 5px solid rgba(0, 0, 0, 0.6);*/
+  box-sizing: border-box;
+  border: 40px solid rgba(5, 20, 61, 0.6);
   
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 98vh;
   
   text-align: center;
   /*display: flex;*/
   align-items: center
 }
 
-.one {
+#one {
   left: 0;
 }
 
-.two {
+#two {
   left: 100vw;
 }
 
-.three {
+#three {
   left: 200vw;
+}
+
+#navMenu {
+  position: fixed;
+  right: 50px;
+  vertical-align: center;
+
+  top: 50%;
+  transform: translateY(-48%);
+
+}
+
+#navMenu button {
+  border-radius: 100%;
+  padding: 10px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+
+  background-color: white;
+  border: 5px solid white; 
+
+  pointer-events: all;
+
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+#navMenu button:hover {
+    background-color: rgba(0, 0, 0, 0);
 }

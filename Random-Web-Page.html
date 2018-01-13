@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FTC 11722</title>
+    <title>FTC 11722 Real Virtuality</title>
     <link rel="stylesheet" type="text/css" href="Random-Web-Main-Page.css">
+
   </head>
   <body>
     
-    <div class="page one">
-      <h1>REAL VIRTUALITY</h1>
+    <div id="navMenu">
+      <button onclick="$(window).scrollTo(document.getElementById('one'), 100);" type="button"></button> 
+      <button onclick="$(window).scrollTo(document.getElementById('two'), 100);" type="button"></button> 
+      <button onclick="$(window).scrollTo(document.getElementById('three'), 100);" type="button"></button> 
+    </div>
+
+    <div class="page" id="one">
+      <h1 style="font-family: I-Find-You-Freaky; font-size: 135px;">REAL VIRTUALITY</h1>
+      <h1 style="font-family: I-Find-You-Freaky; font-size: 135px;">Page 1</h1>
     </div>
     
-    <div class="page two">
-      
+    <div class="page" id="two">
+      <h1 style="font-family: I-Find-You-Freaky; font-size: 135px;">REAL VIRTUALITY</h1>
+      <h1 style="font-family: I-Find-You-Freaky; font-size: 135px;">Page 2</h1>
     </div>
     
-    <div class="page three">
-      
+    <div class="page" id="three">
+      <h1 style="font-family: I-Find-You-Freaky; font-size: 135px;">REAL VIRTUALITY</h1>
+      <h1 style="font-family: I-Find-You-Freaky; font-size: 135px;">Page 3</h1>
     </div>
-    
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.js"></script>
+    <script src="Random-Web-Main-Page.js"></script>
   </body>
 </html>
