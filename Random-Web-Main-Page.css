@@ -63,7 +63,7 @@ table {
 
 body {
   /*Background*/
-  background-color: #4f0ba3;
+  background-color: #db1cd1;
 
   color: white;
   
@@ -90,28 +90,41 @@ body {
   top: 26%;
   transform: translateY(-48%);
   
-  font-size: 50px;
+  font-family: I-Find-You-Freaky;
+  font-size: 8vw;
+  
+  
 }
 
 .page img {
   position: relative;
-  top: 30%;
+  top: 20vh;
   transform: translateY(-48%);
   
-  font-size: 50px;
+  height: 30vh ;
 }
 
 .page {
   box-sizing: border-box;
-  border: 40px solid rgba(5, 20, 61, 0.6);
+  border: 40px solid rgba(104, 4, 99, 0.6);
   
   position: absolute;
   width: 100vw;
-  height: 98vh;
+  height: 100vh;
   
   text-align: center;
   /*display: flex;*/
   align-items: center
+}
+
+.textContainer {
+  position: static;
+  
+  border: 5px solid green;
+  
+  height: 99%;
+  
+  overflow: hidden;
 }
 
 #one {
@@ -133,19 +146,28 @@ body {
 
   top: 50%;
   transform: translateY(-48%);
-
 }
 
 #navMenu button {
   border-radius: 100%;
-  padding: 10px;
+  
+  height: 0px;
+  width: 0px;
+  
+  padding-left: 6px;
+  padding-right: 19px;
+  padding-top: 0px;
+  padding-bottom: 24px;
+
+  
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 24px;
+  color: #db1cd1;
 
   background-color: white;
-  border: 5px solid white; 
+  border: 5px solid white;
 
   pointer-events: all;
 
