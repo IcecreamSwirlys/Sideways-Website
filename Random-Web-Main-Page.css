@@ -54,11 +54,15 @@ table {
 @font-face {
   font-family: Squared-Display;
   src: url(Fonts/SquaredDisplay.TTF);
+  src: "Fonts/SquaredDisplay.TTF";
+  src: 'Fonts/SquaredDisplay.TTF';
 }
 
 @font-face {
   font-family: I-Find-You-Freaky;
   src: url(Fonts/i_fink_u_freeky.TTF);
+  src: "Fonts/i_fink_u_freeky.TTF";
+  src: 'Fonts/i_fink_u_freeky.TTF';
 }
 
 body {
@@ -90,10 +94,8 @@ body {
   top: 26%;
   transform: translateY(-48%);
   
-  font-family: I-Find-You-Freaky;
+  font-family: Verdana;
   font-size: 8vw;
-  
-  
 }
 
 .page img {
@@ -120,7 +122,7 @@ body {
 .textContainer {
   position: static;
   
-  border: 5px solid green;
+  /*border: 5px solid green;*/
   
   height: 99%;
   
@@ -141,7 +143,7 @@ body {
 
 #navMenu {
   position: fixed;
-  right: 50px;
+  right: 60px;
   vertical-align: center;
 
   top: 50%;
@@ -165,6 +167,7 @@ body {
   margin-bottom: 10px;
   font-size: 24px;
   color: #db1cd1;
+  font-family: Arial;
 
   background-color: white;
   border: 5px solid white;

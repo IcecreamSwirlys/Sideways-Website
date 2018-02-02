@@ -1,0 +1,1 @@
+jQuery(".fittext").fitText(1.2)
